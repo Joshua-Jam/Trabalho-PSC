@@ -6,3 +6,24 @@ materias: String[]: Armazena os nomes das matérias do aluno.
 notas: double[][]: Armazena as notas do aluno, com cada linha representando uma matéria e cada coluna uma nota.
 numeroFaltas: int: Armazena o número de faltas do aluno.
 classificacaoFinal: String: Armazena a classificação final do aluno (aprovado, recuperação, reprovado).
+
+Métodos -
+Construtor:
+Aluno(nome: String, materias: String[], notas: double[][], numeroFaltas: int): Construtor que inicializa os atributos da classe.
+
+Métodos de Acesso (getters):
+getNome(): String: Retorna o nome do aluno.
+getMaterias(): String[]: Retorna o array de nomes das matérias.
+getNotas(): double[][]: Retorna a matriz de notas.
+getNumeroFaltas(): int: Retorna o número de faltas.
+getClassificacaoFinal(): String: Retorna a classificação final do aluno.
+
+Método de Modificação (setter):
+setClassificacaoFinal(classificacaoFinal: String): Define a classificação final do aluno.
+
+Classe SistemaEscolar
+
+Métodos -
+main(String[] args): Método principal onde o programa inicia a execução.
+calcularClassificacao(Aluno aluno): String: Método estático que calcula a classificação final de um aluno com base nas suas notas e faltas.
+salvarInformacoesNoArquivo(Aluno aluno): void: Método estático que salva as informações do aluno em um arquivo de texto.
