@@ -1,0 +1,69 @@
+Coleta de Dados do Aluno:
+
+O sistema deve solicitar e coletar o nome do aluno.
+O sistema deve solicitar e coletar os nomes de três matérias para o aluno.
+Coleta e Validação das Notas:
+
+O sistema deve solicitar três notas para cada uma das três matérias do aluno.
+O sistema deve validar que cada nota inserida é menor que 30. Se uma nota igual ou maior que 30 for inserida, o sistema deve exibir uma mensagem de erro e encerrar o processo.
+Coleta do Número de Faltas:
+
+O sistema deve solicitar e coletar o número de faltas do aluno.
+Instanciação do Objeto Aluno:
+
+O sistema deve criar um objeto da classe Aluno com os dados coletados (nome, matérias, notas e número de faltas).
+Cálculo da Classificação Final do Aluno:
+
+O sistema deve calcular a média das notas para cada matéria.
+O sistema deve determinar a classificação final do aluno com base nas médias das matérias e no número de faltas, seguindo estas regras:
+Se o aluno tiver 10 ou mais faltas, ele deve ser classificado como "Reprovado por faltas".
+Se o aluno tiver médias em duas ou mais matérias iguais ou inferiores a 70, ele deve ser classificado como "Reprovado por notas".
+Se o aluno tiver média igual ou inferior a 70 em exatamente uma matéria, ele deve ser classificado como "Recuperação".
+Se o aluno não se enquadrar em nenhuma das condições acima, ele deve ser classificado como "Aprovado".
+Armazenamento dos Dados do Aluno em Arquivo:
+
+O sistema deve salvar as informações do aluno em um arquivo de texto chamado informacoes_aluno.txt.
+As informações salvas devem incluir:
+Nome do aluno.
+Nomes das matérias e suas respectivas notas.
+Número de faltas.
+Classificação final do aluno.
+Exibição da Classificação Final:
+
+O sistema deve exibir a classificação final do aluno no console.
+Fluxo de Execução do Sistema
+Início: O sistema inicia e solicita o nome do aluno.
+Coleta das Matérias: O sistema coleta o nome de três matérias.
+Coleta e Validação das Notas:
+Para cada matéria, o sistema solicita três notas.
+Cada nota é validada para garantir que seja menor que 30. Se uma nota inválida for inserida, o sistema exibe uma mensagem de erro e encerra o processo.
+Coleta do Número de Faltas: O sistema solicita o número de faltas do aluno.
+Criação do Objeto Aluno: O sistema cria uma instância da classe Aluno com os dados coletados.
+Cálculo da Classificação: O sistema calcula a média das notas de cada matéria e determina a classificação final com base nas regras definidas.
+Salvamento em Arquivo: O sistema salva todas as informações do aluno em um arquivo de texto.
+Exibição da Classificação: O sistema exibe a classificação final do aluno no console.
+Encerramento: O sistema encerra a execução.
+Regras de Negócio
+Validação de Notas:
+
+Cada nota deve ser menor que 30. Notas inválidas interrompem o processo com uma mensagem de erro.
+Classificação do Aluno:
+
+Faltas igual ou superior a 10 resultam em "Reprovado por faltas".
+Médias de notas iguais ou inferiores a 70 em duas ou mais matérias resultam em "Reprovado por notas".
+Média de notas igual ou inferior a 70 em uma única matéria resulta em "Recuperação".
+Médias acima de 70 em todas as matérias resultam em "Aprovado".
+Formato do Arquivo de Saída:
+
+O arquivo de saída informacoes_aluno.txt deve conter o nome do aluno, as matérias com suas notas, o número de faltas e a classificação final do aluno.
+Exemplo de Comportamento do Sistema
+Entrada:
+
+Nome do aluno: "João Silva"
+Matérias: ["Matemática", "Português", "Ciências"]
+Notas: [[25, 22, 28], [19, 18, 15], [27, 26, 29]]
+Número de faltas: 5
+Saída:
+
+Classificação final: "Aprovado"
+Arquivo informacoes_aluno.txt
