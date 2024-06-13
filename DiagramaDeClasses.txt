@@ -1,0 +1,8 @@
+Classe Aluno -
+
+Atributos - 
+nome: String: Armazena o nome do aluno.
+materias: String[]: Armazena os nomes das matérias do aluno.
+notas: double[][]: Armazena as notas do aluno, com cada linha representando uma matéria e cada coluna uma nota.
+numeroFaltas: int: Armazena o número de faltas do aluno.
+classificacaoFinal: String: Armazena a classificação final do aluno (aprovado, recuperação, reprovado).
